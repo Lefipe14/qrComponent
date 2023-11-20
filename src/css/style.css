@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap");
 
 :root {
   --White: hsl(0, 0%, 100%);
@@ -14,13 +14,15 @@
 }
 
 body {
+  margin: 0 auto;
+  width: 100vh; /* This this will keep the container perfectly centered. */
   display: flex;
   flex-direction: column;
+  gap: 15px;
   align-items: center;
   justify-content: center;
-  min-height: 629px;
   background-color: var(--Light-gray);
-  gap: 2.5rem;
+  padding: 1rem; /* This is so that on smaller screen sizes, the QR code container can have some spacing around it. */
 }
 
 .container {
@@ -31,7 +33,7 @@ body {
   text-align: center;
   gap: 1.25rem;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.199);
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 15px;
 }
 
@@ -41,11 +43,9 @@ body {
   border-radius: 0.625rem;
 }
 
-h2 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
+h1 {
+  font-size: 1.5em;
+  margin: 10px;
   color: var(--Dark-blue);
   font-weight: 700;
 }
@@ -57,11 +57,12 @@ p {
   font-weight: 400;
 }
 
-/* .attribution {
+.attribution {
+  flex: 1;
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-} */
+}
